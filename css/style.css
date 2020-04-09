@@ -35,6 +35,13 @@
   width: 180px;
 }
 
+#logo a{
+	color: #333;
+}
+#logo a:hover{
+	text-decoration: none;
+}
+
 #menu {
   float: right;
   margin-top: 14px;
@@ -121,7 +128,13 @@
 	color: #717171;
 }
 
-.card-body h5{
+/*.card-body h5{
+	font-family: Playfair;
+	font-size: 18pt;
+	color: #717171;
+}*/
+
+.card-title{
 	font-family: Playfair;
 	font-size: 18pt;
 	color: #717171;
@@ -324,4 +337,74 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #ccc;
   font-weight: normal;  
+}
+
+/*page 3*/
+
+.my-sosmed{
+	list-style-type: none;
+}
+
+.my-sosmed li{
+	display: inline-block;
+	padding-right: 12px;
+}
+
+.title-sidebar{
+	font-family: Roboto;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.title-list{
+	font-size: 14pt;
+	color: #717171;
+}
+
+.bullets{
+	margin-left: 8%;
+    color: #9e9e9e;
+    margin-top: 10%;
+}
+
+.iklan-space{
+	width: 100%;
+	height: 250px;
+	float: left;
+	background-image: url('https://images.unsplash.com/photo-1550005809-91ad75fb315f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.overlay{
+	background: #777c;
+    width: 100%;
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+.text-iklan{
+    color: #fff;
+    margin: 31% 0 0 0;
+}
+.optional-text{
+	margin: 7% 0 0 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 993px) {
+	.text-iklan{
+    	margin: 10% 0 0 0;
+	}
+	.optional-text{
+		margin: 7% 0 0 0;
+	}	
+}
+
+@media screen and (max-width: 500px) {
+	.text-iklan{
+    	margin: 19% 0 0 0;
+	}
+	.optional-text{
+		margin: 7% 0 0 0;
+	}	
 }
