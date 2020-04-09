@@ -108,6 +108,7 @@
 
 .card{
 	border: none;
+	background: none;
 }
 
 .card-body{
@@ -117,6 +118,12 @@
 .card-body h1{
 	font-family: Playfair;
 	font-size: 22pt;
+	color: #717171;
+}
+
+.card-body h5{
+	font-family: Playfair;
+	font-size: 18pt;
 	color: #717171;
 }
 
@@ -209,4 +216,112 @@
 		float: none;
 		text-align: center;
 	}
+}
+
+/*page 2*/
+
+.img-blok{
+	width: 100%;
+}
+
+.img-blok img{
+	max-width: 100%;
+	filter: grayscale(98%);
+}
+
+.info{
+	color: #7777;
+	font-weight: normal;
+	font-family: Roboto;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+
+.avatar{
+	background: #f3f3f3;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+    border-radius: 50%;
+}
+
+.ava-default{
+	color: #ccc;
+    left: 41px;
+    position: absolute;
+    right: auto;
+    top: 24px;
+}
+
+.avatar img{
+	width: 100%;
+    border-radius: 50%;
+    height: 100px;
+    filter: grayscale(98%);
+}
+
+.title-comment{
+	font-size: 13pt;
+	font-weight: bold;
+	color: #696969;
+	text-transform: capitalize;
+}
+
+.count-title{
+	font-family: Roboto;
+	color: #777;
+	text-transform: uppercase;
+}
+
+.comment{
+	color: #717171;
+}
+
+.reply{
+	text-transform: uppercase;
+}
+
+.reply a{
+	font-family: Roboto;
+	color: #7777;
+}
+.reply a:hover{
+	text-decoration: none;
+	color: #777;
+}
+.edit{
+	padding: 17px 0 0 17px;
+    color: #bfbebe;
+    font-weight: normal;
+    font-family: Roboto;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    outline-color: transparent;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+  font-weight: normal;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  font-weight: normal;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #ccc;
+  font-weight: normal;  
+}
+
+textarea:-ms-input-placeholder {
+  color: #ccc;
+  font-weight: normal;  
+}
+
+textarea::placeholder {
+  color: #ccc;
+  font-weight: normal;  
 }
