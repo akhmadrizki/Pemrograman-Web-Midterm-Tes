@@ -17,8 +17,8 @@
   </head>
   <body>
     
-    <div class="container custom-container">
-      <div id="header">
+    <div id="header" class="marg-top">
+      <div class="container custom-container">
         <div id="logo"><h1><a href="index.html">MINIMO</a></h1></div>
         <div id="menu">
           <a href="page2.html" class="menu-item">lifestyle</a>
@@ -28,9 +28,10 @@
         </div>
         <!-- tutup menu -->
       </div>
-      <!-- tutup header -->
+    </div>
+    <!-- tutup header -->
 
-      <div class="d-md-none d-lg-none">
+    <div class="d-md-none d-lg-none">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
           <!-- brand -->
             <div class="mx-auto order-0">
@@ -62,6 +63,7 @@
         </nav>
       </div>
 
+    <div class="container custom-container">
       <div class="banner mt-5">
       </div>
     </div>
@@ -218,6 +220,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--wow.js-->
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+       if($(window).scrollTop() >100){
+           $('#header').addClass('tetap');
+           $('#header').addClass('animate');
+           $('#header').removeClass('marg-top');
+           $('.navbar').addClass('tetap');
+           $('.navbar').addClass('animate');
+       }
+        else{
+            $('#header').removeClass('tetap');
+            $('#header').removeClass('animate');
+            $('#header').addClass('marg-top');
+            $('.navbar').removeClass('tetap');
+            $('.navbar').removeClass('animate');
+        }
+      });
+    </script>
     <script>
       new WOW().init();
     </script>

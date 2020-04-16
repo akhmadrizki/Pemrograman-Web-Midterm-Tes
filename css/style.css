@@ -18,10 +18,34 @@
 	max-width: 1150px;
 }
 
+.animate{
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.7s;
+	animation-name: animatetop;
+	animation-duration: 0.7s;
+}
+@-webkit-keyframes animatetop{
+	from{top:-300px; opacity: 0;}
+	to{top: 0; opacity: 1;}
+}
+@keyframes animatetop{
+	from{top:-300px; opacity: 0;}
+	to{top: 0; opacity: 1;}
+}
+.tetap{
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(100,100,100,0.4);
+    background: #fff;
+}
+
 #header {
   width: 100%;
-  margin-top: 49px;
   display: inline-block;
+  z-index: 99;
+}
+.marg-top{
+	margin-top: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -66,6 +90,11 @@
   color: #717171;
   opacity: 0.5;
   text-decoration: none;
+}
+
+.navbar{
+	width: 100%;
+	z-index: 99;
 }
 
 .banner{
